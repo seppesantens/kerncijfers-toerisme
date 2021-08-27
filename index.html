@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- load the leaflet css and script-->
+		<link 
+			rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+			crossorigin=""/>
+		<script 
+			src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+			crossorigin="">
+		</script>
+		
+		<!-- Set the size of the map. -->
+		<style>
+      #map{ width: 425px; height: 400px; }
+			.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; }
+    </style>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		<title>Kerncijfers 2019</title>
+		
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="map" style="width: 425px; float: left; padding: 10px;"></div>
+			<div style="width: 250px; float: left; padding: 10px;">
+				<div>
+					<strong>West-Vlaanderen</strong><br />
+					667.426 bedden<br />
+					7,6 miljoen verblijfstoeristen<br />
+					31,7 miljoen overnachtingen<br />
+					27,8 miljoen dagtoeristen<br />
+					3,8 miljard euro besteed<br />
+				</div>
+				<br />
+				<div class="information">
+					<em>Klik op de kaart om de cijfers voor de regio's te zien.</em>
+				</div>
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+
+</html>
