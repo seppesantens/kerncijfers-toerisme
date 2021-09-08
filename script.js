@@ -78,11 +78,13 @@ var info = L.control();
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
     var info = '<strong>' + props.naam_regio + '</strong><br />' 
-			+ props.aantal_bedden + ' bedden<br />'
-			+ props.aantal_verblijfstoeristen + ' verblijfstoeristen<br />'
-			+ props.aantal_overnachtingen + ' overnachtingen<br />'
-			+ props.aantal_dagtoeristen + ' dagtoeristen<br />'
-			+ props.besteed + ' euro besteed<br />'
+			+	'<table>'
+			+ '<tr><td align="right">' + props.aantal_bedden + '</td><td>bedden</td><td></td></tr>'
+			+ '<tr><td align="right">' + props.aantal_verblijfstoeristen + '</td><td>miljoen</td><td>verblijfstoeristen</td></tr>'
+			+ '<tr><td align="right">' + props.aantal_overnachtingen + '</td><td>miljoen</td><td>overnachtingen</td></tr>'
+			+ '<tr><td align="right">' + props.aantal_dagtoeristen + '</td><td>dagtoeristen</td><td></td></tr>'
+			//+ '<tr><td align="right">' + props.besteed + '</td><td>...</td><td>euro besteed</td></tr>'
+			+ '</table><br />'
 		
 		if (props.link_trendrapport){
 			info = info + '<a href="' + props.link_trendrapport + '" target="_blank">link naar trendrapport</a>';
