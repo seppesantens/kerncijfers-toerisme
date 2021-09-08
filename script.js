@@ -79,7 +79,7 @@ var info = L.control();
 info.update = function (props) {
     var info = '<strong>' + props.naam_regio + '</strong><br />' 
 			+	'<table>'
-			+ '</td><td align="right">' + props.aantal_bedden + '</td><td>bedden</td><tr><td></tr>'
+			+ '<td align="right">' + props.aantal_bedden + '</td><td>bedden</td><td></td></tr>'
 			+ '<tr><td align="right">' + props.aantal_verblijfstoeristen + '</td><td>miljoen</td><td>verblijfstoeristen</td></tr>'
 			+ '<tr><td align="right">' + props.aantal_overnachtingen + '</td><td>miljoen</td><td>overnachtingen</td></tr>'
 			+ '<tr><td align="right">' + props.aantal_dagtoeristen + '</td><td>miljoen</td><td>dagtoeristen</td></tr>'
