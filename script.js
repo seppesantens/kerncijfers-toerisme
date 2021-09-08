@@ -78,8 +78,8 @@ var info = L.control();
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
     var info = '<strong>' + props.naam_regio + '</strong><br />' 
+			+ props.aantal_bedden + ' bedden<br />'
 			+	'<table>'
-			+ '<tr><td></td><td align="right">' + props.aantal_bedden + '</td><td>bedden</td></tr>'
 			+ '<tr><td align="right">' + props.aantal_verblijfstoeristen + '</td><td align="right">miljoen</td><td>verblijfstoeristen</td></tr>'
 			+ '<tr><td align="right">' + props.aantal_overnachtingen + '</td><td align="right">miljoen</td><td>overnachtingen</td></tr>'
 			+ '<tr><td align="right">' + props.aantal_dagtoeristen + '</td><td align="right">miljoen</td><td>dagtoeristen</td></tr>'
