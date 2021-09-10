@@ -33,7 +33,10 @@ function style(feature) {
 
 function style_lsovl(feature) {
     return {
-			fillOpacity: 0.3
+			weight: 1,
+			opacity: 1,
+			color: feature.properties.kleur,
+			fill: false
     };
 }
 
