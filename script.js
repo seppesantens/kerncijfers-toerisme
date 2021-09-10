@@ -31,6 +31,12 @@ function style(feature) {
     };
 }
 
+function style_lsovl(feature) {
+    return {
+			fillOpacity: 0.3
+    };
+}
+
 function highlightFeature(e) {
     var layer = e.target;
     //$('.information').html(info.update(layer.feature.properties));
@@ -64,12 +70,20 @@ function onEachFeature(feature, layer) {
     });
 }
 
-const response = fetch('kerncijfers.geojson')
-	.then(response => response.json())
-	.then(response => {
-		kerncijfers = L.geoJson(response,{
+const r1 = fetch('kerncijfers.geojson')
+	.then(r1 => r1.json())
+	.then(r1 => {
+		kerncijfers = L.geoJson(r1,{
 			style: style,
-			onEachFeature: onEachFeature,
+			onEachFeature: onEachFeature
+		}).addTo(map);
+	})
+	
+const r2 = fetch('leiestreek_oost-vlaanderen.geojson')
+	.then(r2 => r2.json())
+	.then(r2 => {
+		leiestreek_ovl = L.geoJson(r2,{
+			style: style_lsovl
 		}).addTo(map);
 	})
 
