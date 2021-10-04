@@ -74,7 +74,7 @@ function onEachFeature(feature, layer) {
     });
 }
 
-const r1 = fetch('kerncijfers.geojson')
+const r1 = fetch('kerncijfers_2020.geojson')
 	.then(r1 => r1.json())
 	.then(r1 => {
 		kerncijfers = L.geoJson(r1,{
