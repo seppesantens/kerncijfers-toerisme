@@ -105,7 +105,7 @@ info.update = function (props) {
 			+ '</table><br />'
 		
 		if (props.link_trendrapport){
-			info = info + '<a href="' + props.link_trendrapport + '" target="_blank">link naar trendrapport</a>';
+			info = info + '<a href="' + props.link_trendrapport + '" target="_blank">link naar trendrapport</a><br /><a href="' + props.link_flyer + '" target="_blank">link naar flyer</a>';
 		}
 		
 		return (props ?
