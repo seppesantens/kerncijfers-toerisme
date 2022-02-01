@@ -13,7 +13,7 @@ var mapOptions = {
 // Creating a map object
 var map = L.map('map', mapOptions); 
 
-var tiles = new L.TileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+var tiles = new L.TileLayer('https://tile.openstreetmap.org/${z}/${x}/${y}.png', {
     maxZoom: 18,
     attribution: 'data <a href="https://corporate.westtoer.be/nl/kenniscentrum">Kenniscentrum Westtoer</a> | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
